@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { ArrowUpOutlined } from "@ant-design/icons";
+import { hello, x } from "./func";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React <ArrowUpOutlined />
+          {hello()}:{x}
+          <ArrowUpOutlined />
         </a>
       </header>
     </div>

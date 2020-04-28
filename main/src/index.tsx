@@ -26,7 +26,7 @@ registerMicroApps([
   },
   {
     name: "child2",
-    entry: "//localhost:3001",
+    entry: "//localhost:3002",
     container: "#app",
     activeRule: "/child2",
   },
@@ -46,4 +46,6 @@ actions.onGlobalStateChange((state, prev) => {
   console.log(state, prev);
 });
 
-start({});
+start({
+  sandbox: false,
+});
