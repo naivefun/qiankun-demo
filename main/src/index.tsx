@@ -47,5 +47,5 @@ actions.onGlobalStateChange((state, prev) => {
 });
 
 start({
-  sandbox: false,
+  // sandbox: false,
 });
